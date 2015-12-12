@@ -1,0 +1,238 @@
+04:40:51.599 [Xmemcached-Reactor-6] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+04:40:51.599 [Xmemcached-Reactor-2] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+04:40:51.599 [Xmemcached-Reactor-5] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+04:40:51.627 [Xmemcached-Reactor-2] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+04:40:51.630 [Xmemcached-Reactor-6] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+04:40:51.633 [Xmemcached-Reactor-5] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+04:40:51.869 [Xmemcached-Reactor-3] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+04:40:51.870 [Xmemcached-Reactor-3] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+04:40:52.521 [Xmemcached-Reactor-4] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+04:40:52.521 [Xmemcached-Reactor-4] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+04:40:53.869 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+04:40:53.889 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+04:40:53.891 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+04:40:53.892 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+04:40:53.895 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+04:40:53.897 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+04:40:53.977 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+04:40:54.090 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+04:40:54.522 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+04:40:54.523 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+10:32:28.803 [Xmemcached-Reactor-4] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+10:32:28.804 [Xmemcached-Reactor-4] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+10:32:29.416 [Xmemcached-Reactor-3] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+10:32:30.050 [Xmemcached-Reactor-3] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+10:32:30.050 [XMemcached-HeartBeatPool[MemcachedClient-0]-133] WARN  n.r.xmemcached.impl.MemcachedHandler - Session(192.168.10.101:10001) heartbeat fail 4 times,close session and try to heal it
+10:32:30.051 [Xmemcached-Reactor-2] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+10:32:30.052 [Xmemcached-Reactor-7] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+10:32:30.052 [Xmemcached-Reactor-2] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+10:32:30.491 [XMemcached-HeartBeatPool[MemcachedClient-0]-131] WARN  n.r.xmemcached.impl.MemcachedHandler - Session(192.168.10.101:10001) heartbeat fail 4 times,close session and try to heal it
+10:32:30.491 [Xmemcached-Reactor-1] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+10:32:30.492 [Xmemcached-Reactor-1] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+10:32:30.493 [Xmemcached-Reactor-7] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+10:32:30.806 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+10:32:30.808 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+10:32:32.054 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+10:32:32.055 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+10:32:32.493 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+10:32:32.494 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+10:32:33.084 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+10:32:33.198 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+10:32:33.201 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+10:32:33.244 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+19:56:53.461 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+19:56:53.532 [main] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Dec 08 19:56:53 CST 2015]; root of context hierarchy
+19:56:53.575 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/spring/applicationContext.xml]
+19:56:53.683 [main] INFO  o.s.c.a.ClassPathBeanDefinitionScanner - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+19:56:53.685 [main] INFO  o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+19:56:53.823 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from file [D:\project\mavenproject\message.flzc.com\flzc-message-war\target\com.flzc.message-1.0-SNAPSHOT\WEB-INF\classes\config\spring\spring-database-dao.xml]
+19:56:53.902 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from file [D:\project\mavenproject\message.flzc.com\flzc-message-war\target\com.flzc.message-1.0-SNAPSHOT\WEB-INF\classes\config\spring\spring-dubbo-provider.xml]
+19:56:54.028 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from file [D:\project\mavenproject\message.flzc.com\flzc-message-war\target\com.flzc.message-1.0-SNAPSHOT\WEB-INF\classes\config\spring\spring-servlet-config.xml]
+19:56:54.079 [main] INFO  o.s.c.a.ClassPathBeanDefinitionScanner - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+19:56:54.079 [main] INFO  o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+19:56:54.138 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/spring/server.xml]
+19:56:54.161 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [jar:file:/D:/project/mavenproject/message.flzc.com/flzc-message-war/target/com.flzc.message-1.0-SNAPSHOT/WEB-INF/lib/com.flzc.base-1.0-SNAPSHOT.jar!/spring-memcache.xml]
+19:56:54.442 [main] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from file [D:\project\mavenproject\message.flzc.com\flzc-message-war\target\com.flzc.message-1.0-SNAPSHOT\WEB-INF\classes\config\config.properties]
+19:56:54.443 [main] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from file [D:\project\mavenproject\message.flzc.com\flzc-message-war\target\com.flzc.message-1.0-SNAPSHOT\WEB-INF\classes\config\datasource.properties]
+19:56:54.455 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19:56:54.875 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@27bddfca: defining beans [agencyBizServiceImpl,sceneInfoBizServiceImpl,userBizServiceImpl,cometMessageHandler,cometService,sendMessageController,JPushMessageService,authService,authenticateService,messageService,baseDaoImpl,commonDao,baseServiceImpl,commonService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,sessionFactory,dataSource,parentDataSource,masterDataSource,slaveDataSource,transactionManager,txAdvice,dataSourceAdvice,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#2,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#3,message-dubbo-provider_sbw1,dubbo,com.alibaba.dubbo.config.RegistryConfig,com.flzc.message.api.service.MessageService,conversionService,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#3,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#4,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#4,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#5,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#5,org.springframework.web.servlet.config.viewControllerHandlerMapping,viewResolver,com.flzc.message.comet.server.CometSocketServer#0,com.flzc.message.comet.server.ClientCometHandler#0,com.flzc.message.comet.server.WebCometHandler#0,memcachedClient,cacheInit,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+19:56:56.133 [main] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [com.flzc.base.aop.DynamicDataSource@562d2d1e] of Hibernate SessionFactory for HibernateTransactionManager
+19:56:56.856 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/message],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.flzc.message.controller.SendMessageController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19:56:56.856 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/message/custom],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.flzc.message.controller.SendMessageController.custom(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19:56:57.772 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+19:56:57.776 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+19:56:57.778 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/common/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+19:56:57.781 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+19:56:57.784 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#4'
+19:56:57.786 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/upload/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#5'
+19:56:57.803 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+19:56:58.013 [main] WARN  n.r.xmemcached.XMemcachedClient - XMemcachedClient is using Binary protocol
+19:56:58.053 [main] INFO  c.g.c.y.nio.impl.SelectorManager - Creating 8 reactors...
+19:56:58.089 [main] WARN  c.g.c.y.core.impl.AbstractController - The Controller started at localhost/127.0.0.1:0 ...
+19:56:58.091 [main] WARN  n.r.xmemcached.XMemcachedClient - You are using connection pool for xmemcached client,it's not recommended unless you have test it that it can boost performance in your app.
+19:56:58.106 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+19:56:58.111 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+19:56:58.117 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+19:56:58.122 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+19:56:58.128 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+19:56:59.080 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5615 ms
+19:56:59.300 [main] INFO  c.f.m.comet.server.CometSocketServer - 与web服务器的监听已启动.....
+19:56:59.606 [main] INFO  c.f.m.comet.server.CometSocketServer - 与用户浏览器的监听已启动.....
+19:56:59.606 [main] INFO  c.f.m.c.listener.WebStartupListener - =================启动comet server=================
+19:56:59.622 [main] INFO  c.f.m.c.listener.WebStartupListener - =================启动comet web client=================
+19:56:59.647 [NioProcessor-2] INFO  c.f.m.comet.server.CometSocketServer - CREATED
+19:56:59.647 [NioProcessor-13] INFO  c.f.message.comet.web.CometService - CREATED
+19:56:59.648 [NioProcessor-2] INFO  c.f.m.comet.server.CometSocketServer - OPENED
+19:56:59.650 [NioProcessor-13] INFO  c.f.message.comet.web.CometService - OPENED
+19:56:59.829 [NioProcessor-2] INFO  c.f.m.comet.server.CometSocketServer - RECEIVED: HeapBuffer[pos=0 lim=109 cap=2048: 00 00 00 69 AC ED 00 05 73 72 01 00 29 63 6F 6D...]
+19:56:59.830 [NioProcessor-13] INFO  c.f.message.comet.web.CometService - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+19:56:59.838 [NioProcessor-2] INFO  c.f.m.comet.server.WebCometHandler - 服务器收到的消息:
+19:56:59.850 [main] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'springMVC': initialization started
+19:56:59.854 [NioProcessor-2] INFO  c.f.m.comet.server.WebCometHandler - 验证web服务链接已通过--------------服务器----------------:(0x00000001: nio socket, server, /192.168.10.82:65084 => /192.168.10.82:6666)
+19:56:59.865 [NioProcessor-2] INFO  c.f.m.comet.server.WebCometHandler - comet收到web短发来的消息:=====check_web============={"type":"check_web","content":"96f99a1f-ffe2-4286-8a46-4a57fe4e4f64"}
+19:56:59.867 [main] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Dec 08 19:56:59 CST 2015]; parent: Root WebApplicationContext
+19:56:59.868 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [config/spring/spring-servlet-config.xml]
+19:56:59.891 [main] INFO  o.s.c.a.ClassPathBeanDefinitionScanner - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+19:56:59.891 [main] INFO  o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+19:56:59.900 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19:56:59.904 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6bba2c01: defining beans [sendMessageController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,conversionService,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#3,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#4,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#4,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#5,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#5,org.springframework.web.servlet.config.viewControllerHandlerMapping,viewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@27bddfca
+19:56:59.919 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/message],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.flzc.message.controller.SendMessageController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19:56:59.919 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/message/custom],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.flzc.message.controller.SendMessageController.custom(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19:57:00.000 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+19:57:00.003 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+19:57:00.005 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/common/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+19:57:00.007 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+19:57:00.009 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#4'
+19:57:00.011 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/upload/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#5'
+19:57:00.015 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+19:57:00.078 [main] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'springMVC': initialization completed in 228 ms

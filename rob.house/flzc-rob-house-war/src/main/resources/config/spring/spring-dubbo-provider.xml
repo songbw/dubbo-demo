@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="rob-house-dubbo-provider${dubbo.local}" />
+    <!--<dubbo:protocol name="dubbo" port="60012" />-->
+    <dubbo:protocol name="dubbo" port="60019" />
+    <!--<dubbo:protocol name="dubbo" port="20884" />-->
+    <dubbo:registry protocol="zookeeper" address="${zookeeper.address}" />
+
+    <!-- 活动协议服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.ActivityRuleService" ref="activityRuleService" group="baseActivityRuleService${dubbo.local}" timeout="5000"/>
+    <!-- 答案选项服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.AnswerItemsService" ref="answerItemsService" group="baseAnswerItemsService${dubbo.local}" timeout="5000"/>
+    <!-- 答题活动服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.AnswerQuestionActivityService"
+                   ref="answerQuestionActivityService" group="baseAnswerQuestionActivityService${dubbo.local}" timeout="5000"/>
+    <!-- 答题活动奖项设置服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.AnswerQuestionRewardService"
+                   ref="answerQuestionRewardService" group="baseAnswerQuestionRewardService${dubbo.local}" timeout="5000"/>
+    <!-- 竞拍活动详情服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.AutionActivityInfoService"
+                   ref="autionActivityInfoService" group="baseAutionActivityInfoService${dubbo.local}" timeout="5000"/>
+    <!-- 竞拍身份证服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.AutionCerVerfiyService"
+                   ref="autionCerVerfiyService" group="baseAutionCerVerfiyService${dubbo.local}" timeout="5000"/>
+    <!-- 用户竞拍服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.AutionPriceService"
+                   ref="autionPriceService" group="baseAutionPriceService${dubbo.local}" timeout="5000"/>
+    <!-- 答题活动参与人信息服务  -->
+    <dubbo:service interface="com.flzc.rob.api.service.QuestionActivityParticipantService"
+                   ref="questionActivityParticipantService" group="baseQuestionActivityParticipantService${dubbo.local}" timeout="5000"/>
+    <!-- 活动答题服务  -->
+    <dubbo:service interface="com.flzc.rob.api.service.QuestionItemsService"
+                   ref="questionItemsService" group="baseQuestionItemsService${dubbo.local}" timeout="5000"/>
+    <!-- 答题用户抽奖服务  -->
+    <dubbo:service interface="com.flzc.rob.api.service.QuestionParticipantRewardService"
+                   ref="questionParticipantRewardService" group="baseQuestionParticipantRewardService${dubbo.local}" timeout="5000"/>
+
+    <!-- 活动汇总服务  -->
+    <dubbo:service interface="com.flzc.rob.api.service.ActivityRecapService"
+                   ref="activityRecapService" group="baseActivityRecapService${dubbo.local}" timeout="5000"/>
+
+    <!-- 答题活动服务保障服务  -->
+    <dubbo:service interface="com.flzc.rob.api.service.AnswerQuestionGuaranteeService"
+                   ref="answerQuestionGuaranteeService" group="baseAnswerQuestionGuaranteeService${dubbo.local}" timeout="5000"/>
+
+    <!-- 竞拍活动服务保障服务  -->
+    <dubbo:service interface="com.flzc.rob.api.service.AutionGuaranteeService"
+                   ref="autionGuaranteeService" group="baseAutionGuaranteeService${dubbo.local}" timeout="5000"/>
+    <!-- 竞拍活动奖品设置服务  -->
+    <dubbo:service interface="com.flzc.rob.api.service.AutionPrizeService"
+                   ref="autionPrizeService" group="baseAutionPrizeService${dubbo.local}" timeout="5000"/>
+
+
+    <!-- 小区服务-->
+    <dubbo:service interface="com.flzc.rob.api.service.BlockAreaService" ref="blockAreaService" group="baseBlockAreaService${dubbo.local}"  />
+
+    <!-- 楼盘配套-->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingAroundService" ref="houseBuildingAroundService" group="baseHouseBuildingAroundService${dubbo.local}"  />
+
+    <!-- 楼盘图片-->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingImgService" ref="houseBuildingImgService" group="baseHouseBuildingImgService${dubbo.local}"  />
+
+    <!-- 楼盘动态-->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingMemoService" ref="houseBuildingMemoService" group="baseHouseBuildingMemoService${dubbo.local}"  />
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingDynamicService" ref="houseBuildingDynamicService" group="baseHouseBuildingDynamicService${dubbo.local}"  />
+
+    <!-- 楼盘价格趋势-->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingPriceTraceService" ref="houseBuildingPriceTraceService"
+                   group="baseHouseBuildingPriceTraceService${dubbo.local}"  />
+
+    <!-- 楼盘服务-->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingService" ref="houseBuildingService" group="baseHouseBuildingService${dubbo.local}"  />
+
+    <!-- 楼盘与标签服务-->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingTagsLinkService" ref="houseBuildingTagsLinkService" group="baseHouseBuildingTagsLinkService${dubbo.local}"  />
+    <!-- 楼盘标签日志服务-->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingTagsLogService" ref="houseBuildingTagsLogService" group="baseHouseBuildingTagsLogService${dubbo.local}"  />
+
+    <!-- 楼盘标签服务-->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingTagsService" ref="houseBuildingTagsService" group="baseHouseBuildingTagsService${dubbo.local}"  />
+
+    <!--户型服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseInfoService" ref="houseInfoService" group="baseHouseInfoService${dubbo.local}" />
+
+    <!-- 私人定制 -->
+    <dubbo:service interface="com.flzc.rob.api.service.PropertyCustomizationRecordService" ref="propertyCustomizationRecordService"
+                   group="basePropertyCustomizationRecordService${dubbo.local}"/>
+    <!--  新房首页头条 -->
+    <dubbo:service interface="com.flzc.rob.api.service.HomePageHeadlineService" ref="homePageHeadlineService"
+                   group="baseHomePageHeadlineService${dubbo.local}" />
+
+    <!--首页线上房展标签服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.HomePageFeatureTagService"
+                   ref="homePageFeatureTagService" group="baseHomePageFeatureTagService${dubbo.local}" timeout="5000"/>
+
+    <!-- 私人定制活动基本信息查询 -->
+    <dubbo:service interface="com.flzc.rob.api.service.PropertyCustomizationActivityService"
+                   ref="propertyCustomizationActivityService" group="basePropertyCustomizationActivityService${dubbo.local}" timeout="5000"/>
+
+    <!-- 私人定制活动基本信息查询 -->
+    <dubbo:service interface="com.flzc.rob.api.service.PropertyCustomizationRecordService"
+                   ref="propertyCustomizationRecordService" group="basePropertyCustomizationRecordService${dubbo.local}" timeout="5000"/>
+
+
+    <!--竞拍活动保证金 -->
+    <dubbo:service interface="com.flzc.rob.api.service.AuctionActivityDepositService" ref="auctionActivityDepositService"
+                   group="baseAuctionActivityDepositService${dubbo.local}" />
+
+    <!--竞拍活动竞拍 -->
+    <dubbo:service interface="com.flzc.rob.api.service.AuctionBiddersService" ref="auctionBiddersService"
+                   group="baseAuctionBiddersService${dubbo.local}" />
+
+    <!--楼盘分享 -->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingShareService" ref="houseBuildingShareService"
+                   group="baseHouseBuildingShareService${dubbo.local}" />
+
+    <!--楼盘收藏 -->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingCollectService" ref="houseBuildingCollectService"
+                   group="baseHouseBuildingCollectService${dubbo.local}" />
+
+    <!--楼盘浏览-->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingViewService" ref="houseBuildingViewService"
+                   group="baseHouseBuildingViewService${dubbo.local}" />
+
+    <!--房链券-->
+    <dubbo:service interface="com.flzc.rob.api.service.FlzcTicketService" ref="flzcTicketService"
+                   group="baseFlzcTicketService${dubbo.local}" />
+                   
+    <!--定制参与人员-->
+    <dubbo:service interface="com.flzc.rob.api.service.PropertyCustomizationUserParticipantService" ref="propertyCustomizationUserParticipantService"
+                   group="basePropertyCustomizationUserParticipantService${dubbo.local}" />
+
+    <!-- 开发商打赏-->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingRewardService" ref="houseBuildingRewardService"
+       group="baseHouseBuildingRewardService${dubbo.local}"/>
+
+    <!--  楼盘目标客户 -->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingTargetUserService" ref="houseBuildingTargetUserService"
+            group="baseHouseBuildingTargetUserService${dubbo.local}"/>
+
+    <!-- 红包抵扣服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingDikouTicketService" ref="houseBuildingDikouTicketService"
+            group="baseHouseBuildingDikouTicketService${dubbo.local}"/>
+            
+            <!-- 私人定制服务保障接口实现 -->
+    <dubbo:service interface="com.flzc.rob.api.service.PropertyCustomizationAssuranceService" ref="propertyCustomizationAssuranceService"
+            group="basePropertyCustomizationAssuranceService${dubbo.local}"/>
+            
+            <!-- 用户定制基础服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.PropertyCustomizationBaseInfoService" ref="propertyCustomizationBaseInfoService"
+            group="basePropertyCustomizationBaseInfoService${dubbo.local}"/>
+            
+            <!-- 活动定制关联选项服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.PropertyCustomizationClientLinkItemService" ref="propertyCustomizationClientLinkItemService"
+            group="basePropertyCustomizationClientLinkItemService${dubbo.local}"/>
+            
+            <!-- 定制关注服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.PropertyCustomizationFollowService" ref="propertyCustomizationFollowService"
+            group="basePropertyCustomizationFollowService${dubbo.local}"/>
+            
+            <!-- 定制选项服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.PropertyCustomizationItemService" ref="propertyCustomizationItemService"
+            group="basePropertyCustomizationItemService${dubbo.local}"/>
+            
+            <!-- 定制选项关联服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.PropertyCustomizationLinkItemService" ref="propertyCustomizationLinkItemService"
+            group="basePropertyCustomizationLinkItemService${dubbo.local}"/>
+            
+	<!-- 定制奖项信息服务 -->
+    <dubbo:service interface="com.flzc.rob.api.service.PropertyCustomizationRewardService" ref="propertyCustomizationRewardService"
+            group="basePropertyCustomizationRewardService${dubbo.local}"/>
+            
+            <!-- 列表页线上房展 -->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseListFeatureTagService" ref="houseListFeatureTagService"
+            group="baseHouseListFeatureTagService${dubbo.local}"/>
+    
+    <!-- 楼盘特色标签 -->
+    <dubbo:service interface="com.flzc.rob.api.service.HouseBuildingTagsRecLinkService" ref="houseBuildingTagsRecLinkService"
+            group="baseHouseBuildingTagsRecLinkService${dubbo.local}"/>
+
+	<!-- 搜索热词服务 -->
+	<dubbo:service interface="com.flzc.rob.api.service.CityHotKeywordService" ref="cityHotKeywordService"
+            group="baseCityHotKeywordService${dubbo.local}"/>  
+            
+            <!-- 广告服务 -->
+	<dubbo:service interface="com.flzc.rob.api.service.AdService" ref="adService"
+            group="baseAdService${dubbo.local}"/>  
+            
+             <!-- 金融机构服务 -->
+	<dubbo:service interface="com.flzc.rob.api.service.LoanOrganizationService" ref="loanOrganizationService"
+            group="baseLoanOrganizationService${dubbo.local}"/>          
+</beans>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+	 http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+	">
+
+	<dubbo:application name="project-dubbo-consumer" />
+	<dubbo:protocol name="dubbo" port="20880" />
+	<dubbo:registry protocol="zookeeper"
+		address="192.168.10.101:2181,192.168.10.100:2181" />
+
+	<dubbo:reference id="brandsApprovePicService"
+		interface="com.flzc.rob.api.service.BrandsApprovePicService" timeout="5000"
+		group="baseBrandsApprovePicService" />
+
+	<dubbo:reference id="brandsApproveService"
+		interface="com.flzc.rob.api.service.BrandsApproveService" timeout="5000"
+		group="baseBrandsApproveService" />
+
+	<dubbo:reference id="brandsInfoService"
+		interface="com.flzc.rob.api.service.BrandsInfoService" timeout="5000"
+		group="baseBrandsInfoService" />
+		
+	<dubbo:reference id="brandsLinkmanService"
+		interface="com.flzc.rob.api.service.BrandsLinkmanService" timeout="5000"
+		group="baseBrandsLinkmanService" />
+
+	<dubbo:reference id="builderApproveService"
+		interface="com.flzc.rob.api.service.BuilderApproveService" timeout="5000"
+		group="baseBuilderApproveService" />
+
+	<dubbo:reference id="builderInfoService"
+		interface="com.flzc.rob.api.service.BuilderInfoService" timeout="5000"
+		group="baseBuilderInfoService" />
+		
+	<dubbo:reference id="builderLicncePicService"
+		interface="com.flzc.rob.api.service.BuilderLicncePicService" timeout="5000"
+		group="baseBuilderLicncePicService" />
+
+	<dubbo:reference id="builderLinkmanService"
+		interface="com.flzc.rob.api.service.BuilderLinkmanService" timeout="5000"
+		group="baseBuilderLinkmanService" />
+
+	<dubbo:reference id="userInfoService"
+		interface="com.flzc.rob.api.service.UserInfoService" timeout="5000"
+		group="baseUserInfoService" />
+
+	<dubbo:reference id="userLoginLogService"
+		interface="com.flzc.rob.api.service.UserLoginLogService" timeout="5000"
+		group="baseUserLoginLogService" />
+
+	<dubbo:reference id="userPasswordChangeRecordService"
+		interface="com.flzc.rob.api.service.UserPasswordChangeRecordService" timeout="5000"
+		group="baseUserPasswordChangeRecordService" />
+
+	<dubbo:reference id="userRoleRelationService"
+		interface="com.flzc.rob.api.service.UserRoleRelationService" timeout="5000"
+		group="baseUserRoleRelationService" />
+
+	<dubbo:reference id="userRoleService"
+		interface="com.flzc.rob.api.service.UserRoleService" timeout="5000"
+		group="baseUserRoleService" />
+
+	<dubbo:reference id="userService"
+		interface="com.flzc.rob.api.service.UserService" timeout="5000"
+		group="baseUserService" />
+
+</beans>

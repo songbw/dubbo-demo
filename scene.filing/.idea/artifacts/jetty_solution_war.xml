@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jetty-solution:war">
+    <output-path>E:/jetty-solution_v2.git/target</output-path>
+    <root id="archive" name="jetty-solution.war">
+      <element id="artifact" artifact-name="jetty-solution:war exploded" />
+    </root>
+  </artifact>
+</component>

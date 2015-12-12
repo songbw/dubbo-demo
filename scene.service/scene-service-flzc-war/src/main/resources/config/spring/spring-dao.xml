@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+    
+    
+
+    
+
+
+	<bean id="parentDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <!--连接池中保留的最小连接数5。 -->
+		<property name="minPoolSize">
+			<value>${master.minPoolSize}</value>
+		</property>
+
+		<!--连接池中保留的最大连接数。Default: 15 -->
+		<property name="maxPoolSize">
+			<value>${master.maxPoolSize}</value>
+		</property>
+
+		<!--初始化时获取的连接数，取值应在minPoolSize与maxPoolSize之间。Default: 3 -->
+		<property name="initialPoolSize">
+			<value>${master.initialPoolSize}</value>
+		</property>
+
+		<!--最大空闲时间,60秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+		<property name="maxIdleTime">
+			<value>${master.maxIdleTime}</value>
+		</property>
+
+		<!--当连接池中的连接耗尽的时候c3p0一次同时获取的连接数。Default: 3 -->
+		<property name="acquireIncrement">
+			<value>${master.acquireIncrement}</value>
+		</property>
+
+		<!--JDBC的标准参数，用以控制数据源内加载的PreparedStatements数量。但由于预缓存的statements 属于单个connection而不是整个连接池。所以设置这个参数需要考虑到多方面的因素。 
+			如果maxStatements与maxStatementsPerConnection均为0，则缓存被关闭。Default: 0 -->
+		<property name="maxStatements">
+			<value>${master.maxStatements}</value>
+		</property>
+
+		<!--每60秒检查所有连接池中的空闲连接。Default: 0 -->
+		<property name="idleConnectionTestPeriod">
+			<value>${master.idleConnectionTestPeriod}</value>
+		</property>
+
+		<!--定义在从数据库获取新连接失败后重复尝试的次数。Default: 30 -->
+		<property name="acquireRetryAttempts">
+			<value>${master.acquireRetryAttempts}</value>
+		</property>
+
+		<property name="acquireRetryDelay">
+			<value>${master.acquireRetryDelay}</value>
+		</property>
+
+		<!--获取连接失败将会引起所有等待连接池来获取连接的线程抛出异常。但是数据源仍有效 保留，并在下次调用getConnection()的时候继续尝试获取连接。如果设为true，那么在尝试 
+			获取连接失败后该数据源将申明已断开并永久关闭。Default: false -->
+		<property name="breakAfterAcquireFailure">
+			<value>${master.breakAfterAcquireFailure}</value>
+		</property>
+
+		<property name="testConnectionOnCheckout">
+			<value>${master.testConnectionOnCheckout}</value>
+		</property>
+	</bean>
+	
+		<!-- 配置数据源 -->
+	<bean id="masterDataSource" parent="parentDataSource">
+        <property name="driverClass" value="${master.driverClassName}"/>
+        <property name="jdbcUrl" value="${master.url}"/>
+        <property name="user" value="${master.user}" />
+        <property name="password" value="${master.password}" />
+    </bean>
+    
+    
+    <!-- 配置数据源 -->
+	<bean id="slaveDataSource" parent="parentDataSource">
+        <property name="driverClass" value="${slave.driverClassName}"/>
+        <property name="jdbcUrl" value="${slave.url}"/>
+        <property name="user" value="${slave.user}" />
+        <property name="password" value="${slave.password}" />
+    </bean>
+    
+     <bean id="dataSource" class="com.flzc.base.aop.DynamicDataSource">  
+        <property name="targetDataSources">  
+            <map key-type="java.lang.String">  
+                <entry key="slave" value-ref="slaveDataSource" />
+            </map>  
+        </property>  
+        <property name="defaultTargetDataSource" ref="masterDataSource" />  
+    </bean> 
+    
+    
+    <!-- 配置sessionFactory -->  
+    <bean id="sessionFactory"  
+        class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">  
+        <property name="dataSource" ref="dataSource"></property>  
+        <!-- 注解扫描实体对象 -->
+		<property name="packagesToScan">
+			<list>
+				<value>com.flzc.service.entity</value>
+				<value>com.flzc.tags.bean</value> 
+			</list>
+		</property>
+        <property name="hibernateProperties">  
+            <props>  
+                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hiberante.format_sql">${hibernate.format_sql}</prop>
+            </props>  
+        </property>  
+    </bean>  
+    
+	
+
+    <!-- 配置事务管理器 -->  
+    <bean id="transactionManager"  
+        class="org.springframework.orm.hibernate4.HibernateTransactionManager">  
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>  
+    </bean>  
+    <!--配置事务的传播特性 -->  
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">  
+        <tx:attributes>  
+            <!-- 对增、删、改方法进行事务支持 -->  
+            <tx:method name="add*" propagation="REQUIRED" />  
+            <tx:method name="create*" propagation="REQUIRED" />  
+            <tx:method name="save*" propagation="REQUIRED" />  
+            <tx:method name="edit*" propagation="REQUIRED" />  
+            <tx:method name="update*" propagation="REQUIRED" />  
+            <tx:method name="delete*" propagation="REQUIRED" />  
+            <tx:method name="remove*" propagation="REQUIRED" />  
+            <!-- 对其它方法进行只读事务 -->
+            <tx:method name="*" propagation="SUPPORTS" read-only="true" />  
+        </tx:attributes>  
+    </tx:advice>
+
+    <!--&lt;!&ndash; 切换数据源 &ndash;&gt;-->
+    <!--<bean id="dataSourceAdvice" class="com.flzc.base.aop.DataSourceAdvice" />-->
+    <!--<aop:config>-->
+        <!--<aop:advisor-->
+                <!--pointcut="execution(* com.flzc.service.service..*Service.*(..))"-->
+                <!--advice-ref="dataSourceAdvice" />-->
+    <!--</aop:config>-->
+
+
+    <!--&lt;!&ndash;那些类的哪些方法参与事务 &ndash;&gt;  -->
+    <!--<aop:config>  -->
+        <!--<aop:advisor  -->
+            <!--pointcut="execution(* com.flzc.service.service..*Service.*(..))"  -->
+            <!--advice-ref="txAdvice" />  -->
+
+    <!--</aop:config>  -->
+
+	
+</beans>

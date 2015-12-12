@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="flzc-scene-filing-war:war">
+    <output-path>$PROJECT_DIR$/flzc-scene-filing-war/target</output-path>
+    <root id="archive" name="flzc-scene-filing-war-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="flzc-scene-filing-war:war exploded" />
+    </root>
+  </artifact>
+</component>

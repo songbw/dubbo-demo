@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+                        "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>tc</short-name>
+	<uri>/flzc/tags</uri>
+
+	<tag>
+	   <name>dic</name>
+	   <tag-class>com.flzc.tags.tag.DictionaryDataTag</tag-class>
+	   <body-content>jsp</body-content>
+	   <attribute>
+	      <name>pcode</name>
+	      <required>false</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>var</name>
+	      <required>true</required>
+	      <rtexprvalue>false</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>code</name>
+	      <required>false</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	</tag>
+	
+	<tag>
+	   <name>prov</name>
+	   <tag-class>com.flzc.tags.tag.ProvinceTag</tag-class>
+	   <body-content>jsp</body-content>
+	   <attribute>
+	      <name>var</name>
+	      <required>true</required>
+	      <rtexprvalue>false</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>provId</name>
+	      <required>false</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	</tag>
+	
+	<tag>
+	   <name>city</name>
+	   <tag-class>com.flzc.tags.tag.CityTag</tag-class>
+	   <body-content>jsp</body-content>
+	   <attribute>
+	      <name>provId</name>
+	      <required>false</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>var</name>
+	      <required>true</required>
+	      <rtexprvalue>false</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>cityId</name>
+	      <required>false</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	</tag>
+	
+	<tag>
+	   <name>area</name>
+	   <tag-class>com.flzc.financial.tag.AreaTag</tag-class>
+	   <body-content>jsp</body-content>
+	   <attribute>
+	      <name>cityId</name>
+	      <required>false</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>var</name>
+	      <required>true</required>
+	      <rtexprvalue>false</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>areaId</name>
+	      <required>false</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	</tag>
+</taglib>

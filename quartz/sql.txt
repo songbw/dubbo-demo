@@ -1,0 +1,29 @@
+CREATE TABLE `scheduler_job_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `job_code` varchar(50) DEFAULT NULL COMMENT '任务id',
+  `old_expr` varchar(50) DEFAULT NULL COMMENT '操作前时间表达式',
+  `new_expr` varchar(50) DEFAULT NULL COMMENT '操作后时间表达式',
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '操作时间',
+  `operator` varchar(20) DEFAULT NULL COMMENT '操作人',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='定时任务操作日志';
+
+CREATE TABLE `scheduler_config_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `job_name` varchar(50) DEFAULT NULL COMMENT '任务中文名',
+  `second` varchar(20) DEFAULT NULL COMMENT '表达式中秒的配置',
+  `minute` varchar(20) DEFAULT NULL COMMENT '表达式中分的配置',
+  `hour` varchar(20) DEFAULT NULL COMMENT '表达式中时的配置',
+  `day` varchar(20) DEFAULT NULL COMMENT '表达式中天的配置',
+  `month` varchar(20) DEFAULT NULL COMMENT '表达式中月的配置',
+  `week` varchar(20) DEFAULT NULL COMMENT '表达式中周的配置',
+  `year` varchar(20) DEFAULT NULL COMMENT '表达式中年的配置',
+  `class_name` varchar(255) DEFAULT NULL COMMENT '任务执行全类名',
+  `status` int(11) DEFAULT '0' COMMENT '状态:0激活，1禁用',
+  `memo` varchar(200) DEFAULT NULL COMMENT '说明：调度任务功能说明',
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT '更新时间',
+  `version` int(11) DEFAULT '0' COMMENT '版本号',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COMMENT='定时任务配置信息';
+

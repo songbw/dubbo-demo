@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="scene-filing-dubbo-provider${dubbo.local}" />
+    <!--<dubbo:protocol name="dubbo" port="60001" />-->
+    <dubbo:protocol name="dubbo" port="60011" />
+    <dubbo:registry protocol="zookeeper" address="${zookeeper.address}" />
+    
+    <!-- 案场报备 -->
+    <dubbo:service interface="com.flzc.scene.filing.api.service.SceneFilingService"
+                   ref="sceneFilingService" group="baseSceneFilingService${dubbo.local}" timeout="5000"/>
+
+    <!-- 报备无效原因 -->
+    <dubbo:service interface="com.flzc.scene.filing.api.service.SceneInvalidReasonService"
+                   ref="sceneInvalidReasonService" group="baseSceneInvalidReasonService${dubbo.local}" timeout="5000" />
+
+    <!-- 报备爽约原因 -->
+    <dubbo:service interface="com.flzc.scene.filing.api.service.SceneMissReasonService"
+                   ref="sceneMissReasonService" group="baseSceneMissReasonService${dubbo.local}" timeout="5000" />
+
+    <!-- 报备备注 -->
+    <dubbo:service interface="com.flzc.scene.filing.api.service.SceneRemarkService"
+                   ref="sceneRemarkService" group="baseSceneRemarkService${dubbo.local}" timeout="5000" />
+
+    <!-- 案场看房 -->
+    <dubbo:service interface="com.flzc.scene.filing.api.service.SceneVisitService"
+                   ref="sceneVisitService" group="baseSceneVisitService${dubbo.local}" timeout="5000" />
+
+    <!-- 案场成交 -->
+    <dubbo:service interface="com.flzc.scene.filing.api.service.SceneDealService"
+                   ref="sceneDealService" group="baseSceneDealService${dubbo.local}" timeout="5000" />
+
+    <!-- 案场成交合同图片-->
+    <dubbo:service interface="com.flzc.scene.filing.api.service.SceneDealImgService"
+                   ref="sceneDealImgService" group="baseSceneDealImgService${dubbo.local}" timeout="5000" />
+
+    <!-- 案场成交合同图片-->
+    <dubbo:service interface="com.flzc.scene.filing.api.service.SceneInfoService"
+                   ref="sceneInfoService" group="baseSceneInfoService${dubbo.local}" timeout="5000" />
+
+    <!-- 案场意见反馈-->
+    <dubbo:service interface="com.flzc.scene.filing.api.service.SceneFeedbackService"
+                   ref="sceneFeedbackService" group="baseFeedbackService${dubbo.local}" timeout="5000" />
+
+    <!-- 数据统计-->
+    <dubbo:service interface="com.flzc.scene.filing.api.service.SceneStatisticsService"
+                   ref="sceneStatisticsService" group="baseSceneStatisticsService${dubbo.local}" timeout="5000" />
+</beans>

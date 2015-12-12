@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/scene-service-flzc-api/scene-service-flzc-api.iml" filepath="$PROJECT_DIR$/scene-service-flzc-api/scene-service-flzc-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scene-service-flzc-war/scene-service-flzc-war.iml" filepath="$PROJECT_DIR$/scene-service-flzc-war/scene-service-flzc-war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scene.service.flzc.com.iml" filepath="$PROJECT_DIR$/scene.service.flzc.com.iml" />
+    </modules>
+  </component>
+</project>

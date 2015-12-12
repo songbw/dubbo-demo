@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/com-flzc-file-upload-api/com-flzc-file-upload-api.iml" filepath="$PROJECT_DIR$/com-flzc-file-upload-api/com-flzc-file-upload-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com-flzc-file-upload-war/com-flzc-file-upload-war.iml" filepath="$PROJECT_DIR$/com-flzc-file-upload-war/com-flzc-file-upload-war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file.upload.flzc.com.iml" filepath="$PROJECT_DIR$/file.upload.flzc.com.iml" />
+    </modules>
+  </component>
+</project>

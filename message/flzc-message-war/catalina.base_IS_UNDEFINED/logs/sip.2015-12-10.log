@@ -1,0 +1,393 @@
+10:13:25.503 [Xmemcached-Reactor-3] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+10:13:25.505 [Xmemcached-Reactor-3] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+10:13:25.505 [Xmemcached-Reactor-1] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+10:13:25.506 [Xmemcached-Reactor-2] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+10:13:25.646 [XMemcached-HeartBeatPool[MemcachedClient-0]-164] WARN  n.r.xmemcached.impl.MemcachedHandler - Session(192.168.10.101:10001) heartbeat fail 4 times,close session and try to heal it
+10:13:25.508 [Xmemcached-Reactor-1] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+10:13:25.739 [XMemcached-HeartBeatPool[MemcachedClient-0]-164] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+10:13:25.740 [Xmemcached-Reactor-2] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+10:13:27.106 [Xmemcached-Reactor-5] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+10:13:27.107 [Xmemcached-Reactor-5] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+10:13:27.821 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+10:13:27.883 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+10:13:27.884 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+10:13:27.887 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+10:13:27.889 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+10:13:27.897 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+10:13:27.899 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+10:13:27.905 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+10:13:29.109 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+10:13:29.111 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+13:31:33.270 [Xmemcached-Reactor-3] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:487) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.doRealWrite(AbstractNioSession.java:321) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.writeToChannel(NioTCPSession.java:86) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:111) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.writeFromUserCode(AbstractNioSession.java:237) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.write(AbstractSession.java:384) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.checkHeartBeat(MemcachedHandler.java:205) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.onSessionIdle(MemcachedHandler.java:182) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.onIdle(AbstractSession.java:194) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:350) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkIdle(Reactor.java:496) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkExpiredIdle(Reactor.java:487) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkSessionTimeout(Reactor.java:393) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:160) [xmemcached-2.0.0.jar:na]
+13:31:33.271 [Xmemcached-Reactor-6] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:487) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.doRealWrite(AbstractNioSession.java:321) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.writeToChannel(NioTCPSession.java:86) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:111) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.writeFromUserCode(AbstractNioSession.java:237) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.write(AbstractSession.java:384) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.checkHeartBeat(MemcachedHandler.java:205) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.onSessionIdle(MemcachedHandler.java:182) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.onIdle(AbstractSession.java:194) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:350) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkIdle(Reactor.java:496) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkExpiredIdle(Reactor.java:487) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkSessionTimeout(Reactor.java:393) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:160) [xmemcached-2.0.0.jar:na]
+13:31:33.271 [Xmemcached-Reactor-2] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:487) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.doRealWrite(AbstractNioSession.java:321) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.writeToChannel(NioTCPSession.java:86) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:111) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.writeFromUserCode(AbstractNioSession.java:237) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.write(AbstractSession.java:384) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.checkHeartBeat(MemcachedHandler.java:205) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.onSessionIdle(MemcachedHandler.java:182) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.onIdle(AbstractSession.java:194) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:350) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkIdle(Reactor.java:496) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkExpiredIdle(Reactor.java:487) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkSessionTimeout(Reactor.java:393) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:160) [xmemcached-2.0.0.jar:na]
+13:31:33.271 [Xmemcached-Reactor-1] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:487) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.doRealWrite(AbstractNioSession.java:321) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.writeToChannel(NioTCPSession.java:86) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:111) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.writeFromUserCode(AbstractNioSession.java:237) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.write(AbstractSession.java:384) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.checkHeartBeat(MemcachedHandler.java:205) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.onSessionIdle(MemcachedHandler.java:182) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.onIdle(AbstractSession.java:194) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:350) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkIdle(Reactor.java:496) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkExpiredIdle(Reactor.java:487) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkSessionTimeout(Reactor.java:393) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:160) [xmemcached-2.0.0.jar:na]
+13:31:33.270 [Xmemcached-Reactor-7] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:487) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.doRealWrite(AbstractNioSession.java:321) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.writeToChannel(NioTCPSession.java:86) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:111) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.writeFromUserCode(AbstractNioSession.java:237) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.write(AbstractSession.java:384) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.checkHeartBeat(MemcachedHandler.java:205) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.onSessionIdle(MemcachedHandler.java:182) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.onIdle(AbstractSession.java:194) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:350) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkIdle(Reactor.java:496) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkExpiredIdle(Reactor.java:487) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkSessionTimeout(Reactor.java:393) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:160) [xmemcached-2.0.0.jar:na]
+13:31:35.430 [Xmemcached-Reactor-3] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:487) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.doRealWrite(AbstractNioSession.java:321) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.writeToChannel(NioTCPSession.java:86) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:111) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.flush0(AbstractNioSession.java:282) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.closeChannel(NioTCPSession.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.close(AbstractSession.java:287) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:164) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.writeFromUserCode(AbstractNioSession.java:237) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.write(AbstractSession.java:384) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.checkHeartBeat(MemcachedHandler.java:205) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.onSessionIdle(MemcachedHandler.java:182) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.onIdle(AbstractSession.java:194) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:350) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkIdle(Reactor.java:496) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkExpiredIdle(Reactor.java:487) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkSessionTimeout(Reactor.java:393) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:160) [xmemcached-2.0.0.jar:na]
+13:31:35.600 [Xmemcached-Reactor-3] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+13:31:35.603 [Xmemcached-Reactor-1] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:487) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.doRealWrite(AbstractNioSession.java:321) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.writeToChannel(NioTCPSession.java:86) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:111) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.flush0(AbstractNioSession.java:282) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.closeChannel(NioTCPSession.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.close(AbstractSession.java:287) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:164) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.writeFromUserCode(AbstractNioSession.java:237) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.write(AbstractSession.java:384) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.checkHeartBeat(MemcachedHandler.java:205) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.onSessionIdle(MemcachedHandler.java:182) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.onIdle(AbstractSession.java:194) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:350) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkIdle(Reactor.java:496) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkExpiredIdle(Reactor.java:487) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkSessionTimeout(Reactor.java:393) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:160) [xmemcached-2.0.0.jar:na]
+13:31:35.605 [Xmemcached-Reactor-7] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:487) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.doRealWrite(AbstractNioSession.java:321) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.writeToChannel(NioTCPSession.java:86) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:111) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.flush0(AbstractNioSession.java:282) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.closeChannel(NioTCPSession.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.close(AbstractSession.java:287) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:164) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.writeFromUserCode(AbstractNioSession.java:237) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.write(AbstractSession.java:384) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.checkHeartBeat(MemcachedHandler.java:205) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.onSessionIdle(MemcachedHandler.java:182) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.onIdle(AbstractSession.java:194) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:350) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkIdle(Reactor.java:496) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkExpiredIdle(Reactor.java:487) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkSessionTimeout(Reactor.java:393) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:160) [xmemcached-2.0.0.jar:na]
+13:31:35.669 [Xmemcached-Reactor-1] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+13:31:35.639 [Xmemcached-Reactor-6] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:487) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.doRealWrite(AbstractNioSession.java:321) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.writeToChannel(NioTCPSession.java:86) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:111) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.flush0(AbstractNioSession.java:282) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.closeChannel(NioTCPSession.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.close(AbstractSession.java:287) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:164) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.writeFromUserCode(AbstractNioSession.java:237) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.write(AbstractSession.java:384) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.checkHeartBeat(MemcachedHandler.java:205) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.onSessionIdle(MemcachedHandler.java:182) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.onIdle(AbstractSession.java:194) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:350) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkIdle(Reactor.java:496) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkExpiredIdle(Reactor.java:487) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkSessionTimeout(Reactor.java:393) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:160) [xmemcached-2.0.0.jar:na]
+13:31:35.689 [Xmemcached-Reactor-2] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:487) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.doRealWrite(AbstractNioSession.java:321) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.writeToChannel(NioTCPSession.java:86) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:111) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.flush0(AbstractNioSession.java:282) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.closeChannel(NioTCPSession.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.close(AbstractSession.java:287) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onWrite(AbstractNioSession.java:164) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.writeFromUserCode(AbstractNioSession.java:237) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.write(AbstractSession.java:384) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.checkHeartBeat(MemcachedHandler.java:205) [xmemcached-2.0.0.jar:na]
+	at net.rubyeye.xmemcached.impl.MemcachedHandler.onSessionIdle(MemcachedHandler.java:182) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.core.impl.AbstractSession.onIdle(AbstractSession.java:194) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:350) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkIdle(Reactor.java:496) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkExpiredIdle(Reactor.java:487) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.checkSessionTimeout(Reactor.java:393) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:160) [xmemcached-2.0.0.jar:na]
+13:31:35.693 [Xmemcached-Reactor-7] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+13:31:36.005 [Xmemcached-Reactor-6] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+13:31:36.732 [Xmemcached-Reactor-2] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+13:31:37.670 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+13:31:37.892 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+13:31:38.765 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+13:31:38.900 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+13:31:39.055 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+13:31:39.058 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+13:31:39.071 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+13:31:39.107 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+13:31:39.134 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+13:31:39.163 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+20:13:34.015 [XMemcached-HeartBeatPool[MemcachedClient-0]-310] WARN  n.r.xmemcached.impl.MemcachedHandler - Session(192.168.10.101:10001) heartbeat fail 4 times,close session and try to heal it
+20:13:57.176 [XMemcached-HeartBeatPool[MemcachedClient-0]-310] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+20:14:08.153 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+20:14:08.622 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+20:14:14.565 [Xmemcached-Reactor-4] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+20:14:14.770 [Xmemcached-Reactor-5] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+20:14:14.872 [Xmemcached-Reactor-5] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+20:14:14.894 [Xmemcached-Reactor-7] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+20:14:15.028 [Xmemcached-Reactor-4] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+20:14:15.022 [Xmemcached-Reactor-6] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+20:14:14.894 [Xmemcached-Reactor-1] ERROR n.r.xmemcached.impl.MemcachedHandler - XMemcached network layout exception
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.7.0_79]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[na:1.7.0_79]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[na:1.7.0_79]
+	at com.google.code.yanf4j.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:203) ~[xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:196) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:341) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:56) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.NioController.onRead(NioController.java:157) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.dispatchEvent(Reactor.java:323) [xmemcached-2.0.0.jar:na]
+	at com.google.code.yanf4j.nio.impl.Reactor.run(Reactor.java:180) [xmemcached-2.0.0.jar:na]
+20:14:15.499 [Xmemcached-Reactor-6] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+20:14:15.566 [Xmemcached-Reactor-7] WARN  c.g.c.y.core.impl.AbstractController - Remove a session: 192.168.10.101:10001
+20:14:17.029 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+20:14:17.462 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+20:14:17.500 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+20:14:17.728 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+20:14:17.813 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+20:14:17.846 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
+20:14:17.848 [Heal-Session-Thread] WARN  c.g.c.y.core.impl.AbstractController - Trying to connect to 192.168.10.101:10001 for 1 times
+20:14:17.876 [Xmemcached-Reactor-0] WARN  c.g.c.y.core.impl.AbstractController - Add a session: 192.168.10.101:10001
