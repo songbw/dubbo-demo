@@ -105,7 +105,8 @@
     <orderEntry type="library" name="Maven: com.sun.jersey.contribs:jersey-multipart:1.19" level="project" />
     <orderEntry type="library" name="Maven: org.jvnet.mimepull:mimepull:1.9.3" level="project" />
     <orderEntry type="library" name="Maven: net.coobird:thumbnailator:0.4.8" level="project" />
-    <orderEntry type="library" name="Maven: flzc:com.flzc.tags:RELEASE:0.0.1" level="project" />
+    <orderEntry type="library" name="Maven: flzc:com.flzc.tags:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet.jsp:jsp-api:2.2" level="project" />
     <orderEntry type="library" name="Maven: flzc:flzc-scene-filing-api:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: flzc:com.flzc.rob.house.api:0.0.1-RELEASE" level="project" />
     <orderEntry type="library" name="Maven: flzc:com.flzc.file.upload.api:1.0-SNAPSHOT" level="project" />

@@ -74,11 +74,12 @@
     <orderEntry type="library" name="Maven: org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.common:hibernate-commons-annotations:4.0.2.Final" level="project" />
-    <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.8.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.1" level="project" />
-    <orderEntry type="library" name="Maven: flzc:com.flzc.tags:RELEASE:0.0.1" level="project" />
+    <orderEntry type="library" name="Maven: flzc:com.flzc.tags:0.0.1-RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet.jsp:jsp-api:2.2" level="project" />
   </component>
 </module>

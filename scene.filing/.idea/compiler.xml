@@ -19,21 +19,21 @@
       </profile>
       <profile default="false" name="Annotation profile for flzc-scene-filing-api" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="flzc-scene-filing-api" />
       </profile>
       <profile default="false" name="Annotation profile for flzc-scene-filing-war" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="flzc-scene-filing-war" />
       </profile>
       <profile default="false" name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="jetty-solution" />

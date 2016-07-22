@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: flzc:com.flzc.tags:0.0.1-RELEASE">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/flzc/com.flzc.tags/0.0.1-RELEASE/com.flzc.tags-0.0.1-RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/flzc/com.flzc.tags/0.0.1-RELEASE/com.flzc.tags-0.0.1-RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/flzc/com.flzc.tags/0.0.1-RELEASE/com.flzc.tags-0.0.1-RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

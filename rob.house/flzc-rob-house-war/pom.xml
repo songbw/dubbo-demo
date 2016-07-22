@@ -153,7 +153,8 @@
 		<dependency>
 			<groupId>flzc</groupId>
 			<artifactId>com.flzc.tags</artifactId>
-			<classifier>RELEASE</classifier>
+			<version>0.0.1-RELEASE</version>
+			<!--<classifier>RELEASE</classifier>-->
 		</dependency>
 	</dependencies>
 

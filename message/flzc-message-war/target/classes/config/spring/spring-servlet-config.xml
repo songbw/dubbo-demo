@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+				http://www.springframework.org/schema/tx http://www.springframewyork.org/schema/tx/spring-tx-3.2.xsd
+				http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+				http://www.springframework.org/schema/mvc 
+        		http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+
+
+	<!-- 指定使用注解方式配置,配置自动扫描的包名, base-package指定自己应用中控制器所在的包目录 <context:component-scan/> 
+		扫描指定的包中的类上的注解，常用的注解有： @Controller 声明Action组件 @Service 声明Service组件 @Service("myMovieLister") 
+		@Repository 声明Dao组件 @Component 泛指组件, 当不好归类时. @RequestMapping("/menu") 请求映射 
+		@Resource用于注入，( j2ee提供的 ) 默认按名称装配， @Resource(name="beanName") @Autowired用于注入，(srping提供的) 
+		默认按类型装配 @Transactional(rollbackFor={Exception.class}) 事务管理 @ResponseBody 
+		@Scope("prototype")设定bean的作用域 -->
+	<!-- 扫描注解配置的包 -->
+	<context:component-scan base-package="com.flzc.message.controller" />
+
+	<!-- 默认的注解映射的支持 -->
+
+	<!-- 日期全局转换配置，注册自己实现的DateConverter类 -->
+	<bean id="conversionService"
+		class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+		<property name="converters">
+			<set>
+				<bean class="com.flzc.message.common.DateConverter" />
+			</set>
+		</property>
+	</bean>
+
+	<!-- Spring MVC JSON配置 -->
+	<mvc:annotation-driven conversion-service="conversionService">
+		<mvc:message-converters register-defaults="true">
+		  <!-- 使用Jackson转换器 -->
+			<bean
+				class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+				<property name="supportedMediaTypes" value="text/html;charset=UTF-8" />
+			</bean>
+			<!-- 解决乱码问题 -->
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<property name="supportedMediaTypes">
+					<list>
+						<value>text/html;charset=UTF-8</value>
+						<value>text/plain;charset=UTF-8</value>
+					</list>
+				</property>
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+
+	<!-- 配置js，css等静态文件直接映射到对应的文件夹，不被DispatcherServlet处理 -->
+	<!-- <mvc:resources mapping="/resourse/**" location="/resourse/" /> -->
+	<mvc:resources mapping="/js/**" location="/js/" />
+	<mvc:resources mapping="/themes/**" location="/themes/" /> 
+	<mvc:resources mapping="/common/**" location="/common/" />
+	<mvc:resources mapping="/img/**" location="/img/" />
+	<mvc:resources mapping="/css/**" location="/css/" /> 
+	<mvc:resources mapping="/upload/**" location="/upload/" /> 
+	
+	<mvc:view-controller path="/" view-name="index"/>  
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<!-- 配置视图层 使用jstl标签 -->
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<!-- 定义视图前缀格式 -->
+		<property name="prefix" value="/WEB-INF/pages/" />
+		<!-- 定义视图后缀格式 -->
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+</beans>

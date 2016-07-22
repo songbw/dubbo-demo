@@ -19,14 +19,14 @@
       </profile>
       <profile default="false" name="Annotation profile for com-flzc-file-upload-war" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="com-flzc-file-upload-war" />
       </profile>
       <profile default="false" name="Annotation profile for com-flzc-file-upload-api" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="com-flzc-file-upload-api" />

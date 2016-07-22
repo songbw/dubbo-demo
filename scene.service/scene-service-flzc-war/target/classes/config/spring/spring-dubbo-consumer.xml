@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="flzc-scene-service-consumer_sbw1"/>
+    <!--<dubbo:protocol name="dubbo" port="60013"/>-->
+    <dubbo:protocol name="hessian" port="8080" />
+    <dubbo:protocol name="dubbo" port="60002"/>
+    <dubbo:registry protocol="zookeeper" address="192.168.10.100:2181,192.168.10.100:2181"/>
+
+    <!-- 案场报备 -->
+    <dubbo:reference interface="com.flzc.scene.filing.api.service.SceneFilingService" id="sceneFilingService"
+                     group="baseSceneFilingService_sbw1" protocol="dubbo"/>
+
+    <!-- 案场经纪人信息 -->
+    <dubbo:reference interface="com.flzc.scene.filing.api.service.SceneInfoService" id="sceneInfoService"
+                     group="baseSceneInfoService_sbw1" protocol="dubbo"/>
+
+    <!-- 楼盘服务-->
+    <dubbo:reference interface="com.flzc.rob.api.service.HouseBuildingService" id="houseBuildingService"
+                     group="baseHouseBuildingService_sbw1" protocol="dubbo"/>
+
+    <!-- 意见反馈服务 -->
+    <dubbo:reference interface="com.flzc.scene.filing.api.service.SceneFeedbackService" id="sceneFeedbackService"
+                     group="baseFeedbackService_sbw1" protocol="dubbo"/>
+
+    <!-- 报备无效原因服务 -->
+    <dubbo:reference interface="com.flzc.scene.filing.api.service.SceneInvalidReasonService" id="sceneInvalidReasonService"
+                     group="baseSceneInvalidReasonService_sbw1" protocol="dubbo"/>
+
+    <!-- 看房服务 -->
+    <dubbo:reference interface="com.flzc.scene.filing.api.service.SceneVisitService" id="sceneVisitService"
+                     group="baseSceneVisitService_sbw1" protocol="dubbo"/>
+
+    <!-- 爽约服务 -->
+    <dubbo:reference interface="com.flzc.scene.filing.api.service.SceneMissReasonService" id="sceneMissReasonService"
+                     group="baseSceneMissReasonService_sbw1" protocol="dubbo"/>
+
+    <!-- 备注服务 -->
+    <dubbo:reference interface="com.flzc.scene.filing.api.service.SceneRemarkService" id="sceneRemarkService"
+                     group="baseSceneRemarkService_sbw1" protocol="dubbo"/>
+
+    <!-- 成交服务 -->
+    <dubbo:reference interface="com.flzc.scene.filing.api.service.SceneDealService" id="sceneDealService"
+                     group="baseSceneDealService_sbw1" protocol="dubbo"/>
+
+    <!-- 成交图片服务 -->
+    <dubbo:reference interface="com.flzc.scene.filing.api.service.SceneDealImgService" id="sceneDealImgService"
+                     group="baseSceneDealImgService_sbw1" protocol="dubbo"/>
+
+    <!-- 图片服务器 -->
+    <!--<dubbo:reference protocol="hession" interface="com.flzc.file.upload.api.service.FileUploadService" id="fileUploadService"-->
+                     <!--group="baseFileUploadService_sbw1"/>-->
+
+    <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
+    <dubbo:reference id="fileUploadService"
+                     interface="com.flzc.file.upload.api.service.FileUploadService" group="baseFileUploadService_sbw1" protocol="hessian"/>
+
+    <!-- 消息服务器 -->
+    <dubbo:reference interface="com.flzc.message.api.service.MessageService" id="messageService"
+                     group="baseMessageService_sbw1" protocol="dubbo"/>
+
+
+
+    <!-- 数据统计 -->
+    <dubbo:reference interface="com.flzc.scene.filing.api.service.SceneStatisticsService" id="sceneStatisticsService"
+                     group="baseSceneStatisticsService_sbw1" protocol="dubbo"/>
+
+    <!-- 活动汇总服务  -->
+    <dubbo:reference interface="com.flzc.rob.api.service.ActivityRecapService"
+                     id="activityRecapService" group="baseActivityRecapService_sbw1" protocol="dubbo"/>
+
+    <!-- 楼盘标签服务-->
+    <dubbo:reference interface="com.flzc.rob.api.service.HouseBuildingTagsService"
+                     id="houseBuildingTagsService" group="baseHouseBuildingTagsService_sbw1"  protocol="dubbo" />
+
+</beans>

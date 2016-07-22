@@ -43,6 +43,9 @@
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.1" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.9" level="project" />
-    <orderEntry type="library" name="Maven: flzc:com.flzc.tags:RELEASE:0.0.1" level="project" />
+    <orderEntry type="library" name="Maven: flzc:com.flzc.tags:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet.jsp:jsp-api:2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:3.2.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:3.2.3.RELEASE" level="project" />
   </component>
 </module>

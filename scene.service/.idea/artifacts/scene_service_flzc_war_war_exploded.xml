@@ -87,7 +87,8 @@
           <element id="library" level="project" name="Maven: com.sun.jersey.contribs:jersey-multipart:1.19" />
           <element id="library" level="project" name="Maven: org.jvnet.mimepull:mimepull:1.9.3" />
           <element id="library" level="project" name="Maven: net.coobird:thumbnailator:0.4.8" />
-          <element id="library" level="project" name="Maven: flzc:com.flzc.tags:RELEASE:0.0.1" />
+          <element id="library" level="project" name="Maven: flzc:com.flzc.tags:1.0-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.2" />
           <element id="library" level="project" name="Maven: flzc:flzc-scene-filing-api:1.0-SNAPSHOT" />
           <element id="library" level="project" name="Maven: flzc:com.flzc.rob.house.api:0.0.1-RELEASE" />
           <element id="library" level="project" name="Maven: flzc:com.flzc.file.upload.api:1.0-SNAPSHOT" />
